@@ -13,4 +13,6 @@ gdb> info addr alex
 Symbol alex is at address 0x4010
 gdb> p *0x4010
 $1 = 35
-# linking
+
+# Dump just the data section
+objdump -s -i .data fun.o
